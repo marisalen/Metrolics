@@ -13,6 +13,7 @@
 
 html {
   color: #222;
+  font-family:'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -26,10 +27,10 @@ html {
  *
  * Customize the background color to match your design.
  */
-.page {
+/*.page {
   margin:20em;
-
-}
+} */
+/*
  .boxone {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
@@ -81,6 +82,9 @@ html {
    justify-content: center;
    align-items: center;
  }
+
+ */
+
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -138,9 +142,144 @@ textarea {
   resize: vertical;
 }
 
+img {
+  width:100%;
+}
+
+h1 {
+  color: #000;
+}
+
 /* ==========================================================================
-   Author's custom styles
+LAYOUT
    ========================================================================== */
+  div,
+  section,
+  footer,
+  header {
+    border: 1px solid #ccc;
+  }
+
+  .column {
+    background-color: rgb(243, 222, 194);
+    margin: 1rem;
+  }
+  
+   .heading {
+    text-align: center;
+  }
+  
+  
+  /* Small only */
+  
+  @media screen and (max-width: 39.9375em) {}
+  
+  
+  /* Medium and up */
+  
+  @media screen and (min-width: 40em) {
+    .row {
+      display: grid;
+      width:85vw;
+      max-width: 78rem;
+      margin: 0 auto;
+    }
+
+    .m-col-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+    .m-col-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .m-col-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .m-col-5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .m-1-2 {
+      grid-template-columns: 1fr 2fr;
+    }
+
+
+    .span-full {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
+
+  
+  
+  /* Medium only */
+  
+  @media screen and (min-width: 40em) and 
+  (max-width: 63.9375em) {
+    .special-project {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
+  
+  
+  /* Large and up */
+  
+@media screen and (min-width: 64em) {
+  .l-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .l-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .l-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .l-col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+
+}
+
+
+/* Large only */
+
+@media screen and (min-width: 64em) and 
+(max-width: 74.9375em) {}
+
+
+
+
+   /* ==========================================================================
+MODULES
+   ========================================================================== */
+
+
+
+
+   /* ==========================================================================
+THEME
+   ========================================================================== */
+   
+   .page__slider {
+     background-color: rgb(230, 230, 230);
+   }
+
+   .page__footer {
+     background-color: #222;
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
    .header {
     display: grid;
     grid-template-columns: 3fr repeat(5, 1fr);
