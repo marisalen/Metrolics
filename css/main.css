@@ -13,6 +13,7 @@
 
 html {
   color: #222;
+  font-family:'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -29,7 +30,7 @@ html {
 /*.page {
   margin:20em;
 } */
-
+/*
  .boxone {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
@@ -81,6 +82,9 @@ html {
    justify-content: center;
    align-items: center;
  }
+
+ */
+
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -138,8 +142,32 @@ textarea {
   resize: vertical;
 }
 
+img {
+  width:100%;
+}
+
+h1 {
+  color: #000;
+}
+
 /* ==========================================================================
-   Author's custom styles
+LAYOUT
+   ========================================================================== */
+  .heading {
+    text-align: center;
+  }
+
+
+
+   /* ==========================================================================
+MODULES
+   ========================================================================== */
+
+
+
+
+   /* ==========================================================================
+THEME
    ========================================================================== */
    .header {
     display: grid;
