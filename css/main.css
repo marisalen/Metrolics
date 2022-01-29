@@ -26,10 +26,10 @@ html {
  *
  * Customize the background color to match your design.
  */
-.page {
+/*.page {
   margin:20em;
+} */
 
-}
  .boxone {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
