@@ -727,4 +727,5 @@ MODULES
 
 .filtered:hover {
   filter: sepia(100%) hue-rotate(180deg) saturate(300%);
+  transition: 1s;
 }
